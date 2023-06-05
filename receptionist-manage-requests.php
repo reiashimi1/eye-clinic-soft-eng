@@ -25,7 +25,7 @@
         <div class="main-content">
             <header>
                 <div class="navbar navbar-dark">
-                    <a href="index.php" class="logo me-auto"><img src="../../../Users/AK/Desktop/DevsCreed-main/Code/assets/images/logo.png" alt="Clinic Logo" class="img-fluid"></a>
+                    <a href="main.php" class="logo me-auto"><img src="assets/images/logo.png" alt="Clinic Logo" class="img-fluid"></a>
                     <a><?php echo $_SESSION['user']['username'] ?></a>
                 </div>
             </header>
@@ -34,8 +34,8 @@
                 <br/>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../../../Users/AK/Desktop/DevsCreed-main/Code/receptionist-dashboard.php">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../../../Users/AK/Desktop/DevsCreed-main/Code/receptionist-appointments.php">Appointments</a></li>
+                        <li class="breadcrumb-item"><a href="receptionist-dashboard.php">Home</a></li>
+                        <li class="breadcrumb-item"><a href="receptionist-appointments.php">Appointments</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Requests</li>
                     </ol>
                 </nav>
@@ -119,7 +119,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <form method="POST" action="../../../Users/AK/Desktop/DevsCreed-main/Code/controller/manage-requests.php">
+                                <form method="POST" action="controller/manage-requests.php">
                                     <input type="text" hidden id="cancel_a_id" name="cancel_a_id">
                                     <button type="submit" class="btn btn-danger" id="modal_reject_button" name="modal_reject_button">Reject</button>
                                 </form>
@@ -139,7 +139,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form method="POST" action="../../../Users/AK/Desktop/DevsCreed-main/Code/controller/manage-requests.php" class="border shadow p-3 rounded">
+                                <form method="POST" action="controller/manage-requests.php" class="border shadow p-3 rounded">
                                 <div class="form-group">
                                     <div class="form-group">
                                         <label>Available Doctors</label>
@@ -175,7 +175,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form method="POST" action="../../../Users/AK/Desktop/DevsCreed-main/Code/controller/manage-requests.php" class="border shadow p-3 rounded" id="reschedule_form">
+                                <form method="POST" action="controller/manage-requests.php" class="border shadow p-3 rounded" id="reschedule_form">
                                     <div class="form-group">
                                         <div class="form-group">
                                             <label>Doctor</label>

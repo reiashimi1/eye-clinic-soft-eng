@@ -1,7 +1,7 @@
 <?php
-    session_start();
-    if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'receptionist') {
-?>
+session_start();
+if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'receptionist') {
+    ?>
     <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -18,7 +18,8 @@ include('shared-components/receptionist/sidebar.php');
 
     <header>
         <div class="navbar navbar-dark">
-            <a href="index.php" class="logo me-auto"><img src="assets/images/logo.png" alt="Clinic Logo" class="img-fluid"></a>
+            <a href="main.php" class="logo me-auto"><img src="assets/images/logo.png" alt="Clinic Logo"
+                                                         class="img-fluid"></a>
             <a><?php echo $_SESSION['user']['username'] ?></a>
         </div>
     </header>
@@ -42,7 +43,7 @@ include('shared-components/receptionist/sidebar.php');
                     <div>
                         <h5>Manage Requests</h5>
                         <h4>0 Requests</h4>
-<!--                        TODO: GET From DB-->
+                        <!--                        TODO: GET From DB-->
                         <br/>
                         <br/>
                     </div>
@@ -88,7 +89,7 @@ include('shared-components/receptionist/sidebar.php');
 </div>
 </body>
 
-<?php } else{
+<?php } else {
     //Access Forbidden
     header("Location: ./login.php?error=Access Forbidden");
 } ?>

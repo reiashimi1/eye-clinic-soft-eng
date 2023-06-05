@@ -27,7 +27,7 @@ if($_SESSION['role'] == 'doctor') {
 
             <header>
                 <div class="navbar navbar-dark">
-                    <a href="doctor-dashboard.php" class="logo me-auto"><img src="assets/images/logo.png" alt="Clinic Logo" class="img-fluid"></a>
+                    <a href="main.php" class="logo me-auto"><img src="assets/images/logo.png" alt="Clinic Logo" class="img-fluid"></a>
                     <a><?php echo $_SESSION['user']['username'] ?></a>
                 </div>
             </header>
