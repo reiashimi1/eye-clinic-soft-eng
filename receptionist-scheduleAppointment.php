@@ -60,7 +60,8 @@ if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'receptionist') {
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="name">Full Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name"
+                                <input type="text" class="form-control" id="full_name" name="full_name"
+                                       placeholder="Full Name"
                                        required>
                             </div>
                             <div class="form-group col-md-6">
@@ -122,11 +123,11 @@ if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'receptionist') {
                         <hr/>
                         <div class="form-group">
                             <label for="desc">Details</label>
-                            <textarea class="form-control" id="desc" name="desc" placeholder="Optional"
+                            <textarea class="form-control" id="description" name="description" placeholder="Optional"
                                       rows="2"></textarea>
                         </div>
                         <input type="submit" name="action" id="action" class="btn btn-primary" value="Add"/>
-                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Clear</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" id="clearBtn"> Clear</button>
                     </form>
                 </div>
                 <div class="col-2"></div>
@@ -137,7 +138,14 @@ if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'receptionist') {
     <script type="text/javascript">
 
         $(document).ready(function () {
-
+            $('#clearBtn').on('click', function () {
+                $('#full_name').val('');
+                $('#email').val('');
+                $('#phone').val('');
+                $('#date').val('');
+                $('#time').val('');
+                $('#description').val('');
+            });
             // $('#appointment_form').on('submit', function(event) {
             //     event.preventDefault();
             //

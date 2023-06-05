@@ -41,7 +41,7 @@
             </a>
 
 
-            <a href="receptionist-payments.php">
+            <a href="receptionist-dashboard.php">
                 <li>
                     <span class="ti-credit-card"></span>
                     <span>Payments</span>
@@ -49,7 +49,7 @@
             </a>
 
 
-            <a href="receptionist-contacts.php">
+            <a href="receptionist-dashboard.php">
                 <li><span class="ti-email"></span>
                     <span>Contacts</span></li>
             </a>

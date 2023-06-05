@@ -69,19 +69,19 @@ include('shared-components/receptionist/sidebar.php');
                 </div>
             </div>
 
-            <div class="card-single">
-                <div class="card-body">
-                    <span class="ti-receipt"></span>
-                    <div>
-                        <h5>Process Payment</h5>
-                        <h4>Create invoice</h4>
-                        <br/>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a href="#"> <i class="fa fa-plus-circle fa-2x"></i></a>
-                </div>
-            </div>
+<!--            <div class="card-single">-->
+<!--                <div class="card-body">-->
+<!--                    <span class="ti-receipt"></span>-->
+<!--                    <div>-->
+<!--                        <h5>Process Payment</h5>-->
+<!--                        <h4>Create invoice</h4>-->
+<!--                        <br/>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card-footer">-->
+<!--                    <a href="#"> <i class="fa fa-plus-circle fa-2x"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
 
         </div>
 

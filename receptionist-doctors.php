@@ -1,6 +1,11 @@
 <?php
 session_start();
 if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'receptionist') {
+    include('model/db_conn.php');
+    include('model/employee.class.php');
+
+    $dbh = Database::get_connection();
+    $doctors = (new Employee($dbh))->getDoctors();
     ?>
     <html lang="en">
 <head>
@@ -36,19 +41,21 @@ include('shared-components/receptionist/sidebar.php');
         <br/>
         <div class="container">
             <div class="row-cols-4">
-                <div class="col s">
-                    <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="assets/images/default-profile.jpg" alt="Card image cap">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                        <div class="card-body">
-                            <button class="btn btn-primary btn-sm">Schedule</button>
+                <?php foreach ($doctors as $doctor): ?>
+                    <div class="col s">
+                        <div class="card" style="width: 15rem;">
+                            <img class="card-img-top" src="assets/images/default-profile.jpg" alt="Card image cap">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><?php echo $doctor['full_name']; ?></li>
+                                <li class="list-group-item"><?php echo $doctor['email']; ?></li>
+                                <li class="list-group-item"><?php echo $doctor['phone']; ?></li>
+                            </ul>
+                            <div class="card-body">
+                                <button class="btn btn-primary btn-sm">Schedule</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </main>

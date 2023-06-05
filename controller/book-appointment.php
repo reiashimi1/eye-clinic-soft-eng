@@ -6,7 +6,7 @@ include('../utils/helpers.php');
 
 $dbh = Database::get_connection();
 
-$full_name = $_POST['name'];
+$full_name = $_POST['full_name'];
 $email = $_POST['email'];
 $date = $_POST['date'];
 $time = $_POST['time'];
@@ -17,8 +17,9 @@ $patient_id = null;
 $service_id = null;
 $status = "requested";
 $description = null;
+$transaction_id = null;
 
-$date .= ' ' . $time . ':00:00';
+$time = $date . ' ' . $time . ':00:00';
 
 if ($_POST['doctor_id']) {
     $doctor_id = $_POST['doctor_id'];
@@ -39,11 +40,12 @@ if ($_POST['service_id']) {
     $service_id = $_POST['service_id'];
 }
 
-if ($_POST['desc']) {
-    $description = $_POST['desc'];
+if ($_POST['description']) {
+    $description = $_POST['description'];
 }
 
-$result = (new Appointment($dbh))->addNewAppointment($full_name, $email, $phone, $date, $doctor_id, $service_id, $patient_id, $status, $description);
+$result = (new Appointment($dbh))->addNewAppointment($full_name, $email, $phone, $status, $time, $doctor_id, $patient_id, $transaction_id, $service_id, $description);
+echo $result;
 
 if ($result) {
     header("Location: ../receptionist-scheduleAppointment.php?success=Successfully scheduled appointment!");

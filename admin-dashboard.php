@@ -114,18 +114,18 @@ include('shared-components/admin/sidebar1.php');
                 </div>
             </div>
 
-            <div class="card-single">
-                <div class="card-body">
-                    <span class="ti-check-box"></span>
-                    <div>
-                        <h5>Income</h5>
-                        <h4>$20,659</h4>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a href="">View all</a>
-                </div>
-            </div>
+<!--            <div class="card-single">-->
+<!--                <div class="card-body">-->
+<!--                    <span class="ti-check-box"></span>-->
+<!--                    <div>-->
+<!--                        <h5>Income</h5>-->
+<!--                        <h4>$20,659</h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card-footer">-->
+<!--                    <a href="">View all</a>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
         <br/>
 

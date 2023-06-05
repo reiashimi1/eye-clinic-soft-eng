@@ -1,6 +1,12 @@
 <?php
 session_start();
 if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'receptionist') {
+    include('model/db_conn.php');
+    include('model/appointment.class.php');
+
+    $dbh = Database::get_connection();
+    $requests = (new Appointment($dbh))->getAppointmentRequests();
+
     ?>
     <html lang="en">
 <head>
@@ -42,8 +48,7 @@ include('shared-components/receptionist/sidebar.php');
                     <span class="ti-time"></span>
                     <div>
                         <h5>Manage Requests</h5>
-                        <h4>0 Requests</h4>
-                        <!--                        TODO: GET From DB-->
+                        <h4><?php echo count($requests[0]); ?> requests</h4>
                         <br/>
                         <br/>
                     </div>

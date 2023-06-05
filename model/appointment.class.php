@@ -9,11 +9,11 @@
             $this->dbh = $dbh;
         }
 
-
-        public function addNewAppointment($full_name, $email, $phone, $time, $doctor_id, $service_id, $patient_id, $status, $description) {
-            $query = "INSERT INTO `appointment` (`full_name`, `email`, `phone`, `time`, `doctor_id`, `service_id`, `patient_id`, `status`, `description`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
+        public function addNewAppointment($full_name, $email, $phone, $status, $time, $doctor_id, $patient_id, $transaction_id, $service_id, $description)
+        {
+            $query = "INSERT INTO `appointment` (`full_name`, `email`, `phone`, `status`, `time`, `doctor_id`, `patient_id`, `transaction_id`, `service_id`, `description`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
             $stmt = $this->dbh->prepare($query);
-            return $stmt->execute([$full_name, $email, $phone, $time, $doctor_id, $service_id, $patient_id, $status, $description]);
+            return $stmt->execute([$full_name, $email, $phone, $status, $time, $doctor_id, $patient_id, $transaction_id, $service_id, $description]);
         }
 
         public function  getNextAppointment($doctor_id) {
@@ -99,7 +99,6 @@
             array_push($result, $stmt->fetchAll(PDO::FETCH_ASSOC));
             array_push($result, $stmt->rowCount());
             return $result;
-
         }
 
         public function manageRequest($a_id, $action, $doctor_id) {

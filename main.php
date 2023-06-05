@@ -13,7 +13,8 @@
     <link href="assets/images/favicon.png" rel="icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -29,14 +30,16 @@
     <link href="assets/css/theme.css" rel="stylesheet">
 
     <!-- Link for date picker -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"
+          id="bootstrap-css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css"
+          rel="stylesheet" id="bootstrap-css">
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Link for time picker -->
-    <link href="https://cdn.jsdelivr.net/bootstrap.timepicker/0.2.6/css/bootstrap-timepicker.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/bootstrap.timepicker/0.2.6/css/bootstrap-timepicker.min.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
@@ -46,7 +49,7 @@
 
 <body>
 
-<?php include('./shared-components/header.php')?>
+<?php include('./shared-components/header.php') ?>
 
 <!-- ======= Hero Section ======= -->
 <section id="hero2" class="d-flex align-items-center">
@@ -85,7 +88,8 @@
                                     <h4>We're different.</h4>
                                     <p>
                                         Our specialist consultant ophthalmic surgeons deliver
-                                        the whole experience from the initial consultation, on to treatment and through to discharge
+                                        the whole experience from the initial consultation, on to treatment and through
+                                        to discharge
                                     </p>
                                 </div>
                             </div>
@@ -95,7 +99,8 @@
                                     <h4>We take the time.</h4>
                                     <p>
                                         We aim to understand each patient’s concerns and needs.
-                                        We offer only the very best treatments which are most appropriate for your eyes and lifestyle.
+                                        We offer only the very best treatments which are most appropriate for your eyes
+                                        and lifestyle.
                                     </p>
                                 </div>
                             </div>
@@ -133,8 +138,10 @@
                         <div class="icon"><i class="bi bi-journal-medical"></i></div>
                         <h4 class="title"><a href="">1. Your Consultation </a></h4>
                         <p class="description">
-                            As one size never fits all, a thorough assessment of your eyes will be carried out in the initial
-                            consultation so your dedicated consultant ophthalmic surgeon can recommend the right treatment to suit you.
+                            As one size never fits all, a thorough assessment of your eyes will be carried out in the
+                            initial
+                            consultation so your dedicated consultant ophthalmic surgeon can recommend the right
+                            treatment to suit you.
                             No pressure to proceed, guaranteed.
                         </p>
                     </div>
@@ -143,8 +150,10 @@
                         <div class="icon"><i class="bi bi-file-earmark-medical"></i></div>
                         <h4 class="title"><a href="">2. Your Treatment</a></h4>
                         <p class="description">
-                            Your treatment will be personalised to your eyes, needs and lifestyle, ensuring that you get the very best results possible.
-                            Our hospital-based clinics are equipped with the very best in facilities to give you an exceptional experience
+                            Your treatment will be personalised to your eyes, needs and lifestyle, ensuring that you get
+                            the very best results possible.
+                            Our hospital-based clinics are equipped with the very best in facilities to give you an
+                            exceptional experience
                         </p>
                     </div>
 
@@ -152,8 +161,10 @@
                         <div class="icon"><i class="bi bi-emoji-smile"></i></div>
                         <h4 class="title"><a href="">3. Your Aftercare</a></h4>
                         <p class="description">
-                            To ensure you get the best results, your aftercare is just as important as the treatment itself. This is why you will be given a tailored aftercare plan,
-                            a dedicated helpline if you have any questions as well as follow-up appointments to ensure your results are as expected.
+                            To ensure you get the best results, your aftercare is just as important as the treatment
+                            itself. This is why you will be given a tailored aftercare plan,
+                            a dedicated helpline if you have any questions as well as follow-up appointments to ensure
+                            your results are as expected.
                         </p>
                     </div>
 
@@ -172,7 +183,8 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="count-box">
                         <i class="fas fa-user-md"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2" class="purecounter"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2"
+                              class="purecounter"></span>
                         <p>Doctors</p>
                     </div>
                 </div>
@@ -180,7 +192,8 @@
                 <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
                     <div class="count-box">
                         <i class="far fa-first-aid"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
+                              class="purecounter"></span>
                         <p>Active Patients</p>
                     </div>
                 </div>
@@ -188,7 +201,8 @@
                 <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
                     <div class="count-box">
                         <i class="fas fa-hospital"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="56" data-purecounter-duration="1" class="purecounter"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="56" data-purecounter-duration="1"
+                              class="purecounter"></span>
                         <p>Sucessful Operations</p>
                     </div>
                 </div>
@@ -196,7 +210,8 @@
                 <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
                     <div class="count-box">
                         <i class="fas fa-award"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
+                              class="purecounter"></span>
                         <p>Awards</p>
                     </div>
                 </div>
@@ -221,7 +236,8 @@
                         <div class="icon"><i class="fa fa-user-md"></i></div>
                         <h4><a href="">Comprehensive eye examinations</a></h4>
                         <p>
-                            A comprehensive eye exam to assess your visual system and eye health involves a number of different of tests.
+                            A comprehensive eye exam to assess your visual system and eye health involves a number of
+                            different of tests.
                         </p>
                     </div>
                 </div>
@@ -242,7 +258,8 @@
                         <div class="icon"><i class="fas fa-hospital-user"></i></div>
                         <h4><a href="">Expert fitting of contact lenses</a></h4>
                         <p>
-                            For mild to moderate keratoconus, many contact lens specialists recommend rigid gas permeable contact lenses.
+                            For mild to moderate keratoconus, many contact lens specialists recommend rigid gas
+                            permeable contact lenses.
                         </p>
                     </div>
                 </div>
@@ -263,7 +280,8 @@
                         <div class="icon"><i class="fas fa-x-ray"></i></div>
                         <h4><a href="">Corneal Transplants</a></h4>
                         <p>
-                            A cornea transplant (keratoplasty) is a surgical procedure to replace part of your cornea with corneal tissue from a donor.
+                            A cornea transplant (keratoplasty) is a surgical procedure to replace part of your cornea
+                            with corneal tissue from a donor.
                         </p>
                     </div>
                 </div>
@@ -293,61 +311,60 @@
             </div>
 
             <form action="controller/book-appointment.php" method="post" class="php-email-form">
-
                 <div class="row">
                     <div class="col-md-4 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                        <div class="validate"></div>
+                        <input type="text" name="full_name" class="form-control" id="full_name" placeholder="Your Name"
+                               required>
+<!--                        <div class="validate"></div>-->
                     </div>
                     <div class="col-md-4 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"  required>
-                        <div class="validate"></div>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                               required>
+<!--                        <div class="validate"></div>-->
                     </div>
                     <div class="col-md-4 form-group mt-3 mt-md-0">
-                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
-                        <div class="validate"></div>
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone"
+                               required>
+<!--                        <div class="validate"></div>-->
                     </div>
                 </div>
 
                 <div class="row">
                     <div class='col-sm-6 '>
-                        <form>
-                            <div class="form-group mt-3 mt-md-0">
-                                <div class='input-group' id='date_group'>
-                                    <div class="form-group">
-                                        <input type="date" name="date" class="form-control" id="date" required>
-                                    </div>
-                                    <span class="input-group-addon">
+                        <div class="form-group mt-3 mt-md-0">
+                            <div class='input-group' id='date_group'>
+                                <div class="form-group">
+                                    <input type="date" name="date" class="form-control" id="date" required>
+                                </div>
+                                <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-calendar"></span>
                                 </span>
-                                </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
                     <div class='col-sm-6 '>
-                        <form>
-                            <div class="form-group mt-3 mt-md-0">
-                                <div class="input-group">
-                                    <div class="form-group">
-                                        <select id="time" name="time" class="form-control" placeholder="Time">
-                                            <?php
-                                            $timeslots = array('9:00:00', '10:00:00', '11:00:00', '12:00:00', '13:00:00', '14:00:00', '15:00:00', '16:00:00', '17:00:00', '18:00:00');
-                                            foreach ($timeslots as $time) {
-                                                echo '<option value="' . $time . '">' . $time . '</option>';
-                                            }
-                                            ?>
-                                        </select>
-                                    </div>
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                        <div class="form-group mt-3 mt-md-0">
+                            <div class="input-group">
+                                <div class="form-group">
+                                    <select id="time" name="time" class="form-control" placeholder="Time">
+                                        <?php
+                                        $timeslots = array('9:00:00', '10:00:00', '11:00:00', '12:00:00', '13:00:00', '14:00:00', '15:00:00', '16:00:00', '17:00:00', '18:00:00');
+                                        foreach ($timeslots as $time) {
+                                            echo '<option value="' . $time . '">' . $time . '</option>';
+                                        }
+                                        ?>
+                                    </select>
                                 </div>
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
-                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+                    <script type="text/javascript"
+                            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
 
-                    <script >
+                    <script>
                         $(function () {
                             $('#datepicker').datepicker({
                                 format: "dd/mm/yyyy",
@@ -372,13 +389,15 @@
                 </div>
 
                 <div class="form-group mt-3">
-                    <textarea class="form-control" name="desc" id="desc" rows="5" placeholder="Message (Optional)"></textarea>
-                    <div class="validate"></div>
+                    <textarea class="form-control" name="description" id="description" rows="5"
+                              placeholder="Message (Optional)"></textarea>
+<!--                    <div class="validate"></div>-->
                 </div>
 
-                <div class="text-center"><button type="submit" class="btn btn-primary">Request Appointment</button></div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Request Appointment</button>
+                </div>
             </form>
-
         </div>
     </section><!-- End Appointment Section -->
 
@@ -472,7 +491,8 @@
         </div>
 
         <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5993.362630054161!2d19.805624499999997!3d41.31579595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13503056051a2295%3A0xae080d6a1ef381e!2sKomuna%20e%20Parisit%2C%20Tirana!5e0!3m2!1sen!2s!4v1685386718511!5m2!1sen!2s" width=100% height="350px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5993.362630054161!2d19.805624499999997!3d41.31579595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13503056051a2295%3A0xae080d6a1ef381e!2sKomuna%20e%20Parisit%2C%20Tirana!5e0!3m2!1sen!2s!4v1685386718511!5m2!1sen!2s"
+                    width=100% height="350px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
         <div class="container">
@@ -509,24 +529,30 @@
                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                         <div class="row">
                             <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                       required>
                             </div>
                             <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                <input type="email" class="form-control" name="email" id="email"
+                                       placeholder="Your Email" required>
                             </div>
                         </div>
                         <div class="form-group mt-3">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                   required>
                         </div>
                         <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                      required></textarea>
                         </div>
                         <div class="my-3">
                             <div class="loading">Loading</div>
                             <div class="error-message"></div>
                             <div class="sent-message">Your message has been sent. Thank you!</div>
                         </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
+                        <div class="text-center">
+                            <button type="submit">Send Message</button>
+                        </div>
                     </form>
 
                 </div>
@@ -568,9 +594,11 @@
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#services">Comprehensive eye examinations</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#services">Comprehensive eye examinations</a>
+                        </li>
                         <li><i class="bx bx-chevron-right"></i> <a href="#services">Refractions for eyeglasses</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#services">Retinal diagnosis and surgery</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#services">Retinal diagnosis and surgery</a>
+                        </li>
                         <li><i class="bx bx-chevron-right"></i> <a href="#services">Glaucoma Management</a></li>
                     </ul>
                 </div>
@@ -608,12 +636,13 @@
 </footer><!-- End Footer -->
 
 <div id="preloader"></div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
+<!--<script src="assets/vendor/php-email-form/validate.js"></script>-->
 <script src="assets/vendor/purecounter/purecounter.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
