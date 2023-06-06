@@ -73,8 +73,8 @@ include('shared-components/admin/sidebar1.php');
                 <div class="card-body">
                     <span class="ti-eye" style="color: #0a53be"></span>
                     <div>
-                        <h5>Online Users</h5>
-                        <h4><?php echo $nr_online.' Online Staff Users' ?></h4>
+                        <h5>All Users</h5>
+                        <h4><?php echo $nr_online.' Staff Users' ?></h4>
                     </div>
                 </div>
                 <div class="card-footer">
@@ -96,9 +96,6 @@ include('shared-components/admin/sidebar1.php');
                         <h4>$20,659</h4>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <a href="">View all</a>
-                </div>
             </div>
 
             <div class="card-single">
@@ -108,9 +105,6 @@ include('shared-components/admin/sidebar1.php');
                         <h5>Patients</h5>
                         <h4>$19,500.45</h4>
                     </div>
-                </div>
-                <div class="card-footer">
-                    <a href="">View all</a>
                 </div>
             </div>
 

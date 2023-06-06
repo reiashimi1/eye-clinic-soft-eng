@@ -69,7 +69,7 @@ include('shared-components/doctor/sidebar.php');
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="doctor-patients.php" class="btn btn-outline-primary">Create <span class="ti-plus"> </span></a>
+                    <a href="doctor-healthrecords.php" class="btn btn-outline-primary">Create <span class="ti-plus"> </span></a>
                 </div>
             </div>
             <div class="card-single">
@@ -106,7 +106,7 @@ include('shared-components/doctor/sidebar.php');
                 <div class = "row">
                     <div class = "col-sm-9" >Your schedule for today </div>
                     <div class = "col-sm-3"  align="right">
-                        <a href="controller/generate_pdf.php?doctor_id=<?php echo $employee['employee_id']?>"> <i class="fas fa-print"></i></a>
+                        <a target="_blank" href="controller/generate_pdf.php?doctor_id=<?php echo $employee['employee_id']?>"> <i class="fas fa-print"></i></a>
                     </div>
                 </div>
             </div>

@@ -40,9 +40,9 @@ include('shared-components/receptionist/sidebar.php');
         <br/>
         <br/>
         <div class="container">
-            <div class="row-cols-4">
+            <div class="d-flex">
                 <?php foreach ($doctors as $doctor): ?>
-                    <div class="col s">
+                    <div class="col s mb-5">
                         <div class="card" style="width: 15rem;">
                             <img class="card-img-top" src="assets/images/default-profile.jpg" alt="Card image cap">
                             <ul class="list-group list-group-flush">
@@ -50,9 +50,9 @@ include('shared-components/receptionist/sidebar.php');
                                 <li class="list-group-item"><?php echo $doctor['email']; ?></li>
                                 <li class="list-group-item"><?php echo $doctor['phone']; ?></li>
                             </ul>
-                            <div class="card-body">
-                                <button class="btn btn-primary btn-sm">Schedule</button>
-                            </div>
+<!--                            <div class="card-body">-->
+<!--                                <button class="btn btn-primary btn-sm">Schedule</button>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 <?php endforeach; ?>

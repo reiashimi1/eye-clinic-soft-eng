@@ -1,11 +1,12 @@
 <?php
 session_start();
-if (isset($_SESSION['doctor_id']) && $_SESSION['role'] === 'doctor') {
-    include('model/db_conn.php');
-    include('model/employee.class.php');
+if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'patient') {
+    require_once('model/db_conn.php');
+    include 'model/user.class.php';
+    include_once('model/patient.class.php');
 
     $dbh = Database::get_connection();
-    $doctor = (new Employee($dbh))->getEmployee($_SESSION['doctor_id']);
+    $patient = (new Users($dbh))->getUserbyId($_SESSION['user_id']);
     ?>
     <html lang="en">
 <head>
@@ -13,11 +14,11 @@ if (isset($_SESSION['doctor_id']) && $_SESSION['role'] === 'doctor') {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php include('shared-components/includes.php') ?>
-    <title>Doctor Profile</title>
+    <title>Patient Profile</title>
 </head>
 <body>
 <?php
-include('shared-components/doctor/sidebar.php');
+include('shared-components/patient/sidebar.php');
 ?>
 <div class="main-content">
 
@@ -45,9 +46,9 @@ include('shared-components/doctor/sidebar.php');
                     <div class="card" style="width: 15rem;">
                         <img class="card-img-top" src="assets/images/default-profile.jpg" alt="Card image cap">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><?php echo $doctor['full_name']; ?></li>
-                            <li class="list-group-item"><?php echo $doctor['email']; ?></li>
-                            <li class="list-group-item"><?php echo $doctor['phone']; ?></li>
+                            <li class="list-group-item"><?php echo $patient['name'] . " " . $patient['surname']; ?></li>
+                            <li class="list-group-item"><?php echo strtoupper($patient['role']); ?></li>
+                            <li class="list-group-item"><?php echo $patient['isOnline']; ?></li>
                         </ul>
                     </div>
                 </div>

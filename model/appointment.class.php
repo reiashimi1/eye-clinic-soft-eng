@@ -101,6 +101,15 @@
             return $result;
         }
 
+        public function getAppointmentForPatient($patient_id) {
+            $stmt = $this->dbh->prepare("SELECT * FROM `appointment` WHERE `patient_id` = $patient_id");
+            $stmt->execute();
+            $result = array();
+            array_push($result, $stmt->fetchAll(PDO::FETCH_ASSOC));
+            array_push($result, $stmt->rowCount());
+            return $result;
+        }
+
         public function manageRequest($a_id, $action, $doctor_id) {
             if ($action == "approved"){
                 $query = "UPDATE `appointment` SET `doctor_id` = ?, `status` = ?, `service_id` = 1 WHERE a_id = ?";

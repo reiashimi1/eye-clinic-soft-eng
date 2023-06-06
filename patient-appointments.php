@@ -1,7 +1,7 @@
 <?php
 session_start();
-if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'receptionist') {
-    require_once ('model/db_conn.php');
+if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'patient') {
+    require_once('model/db_conn.php');
     include 'model/appointment.class.php';
     include 'model/user.class.php';
 
@@ -17,17 +17,18 @@ if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'receptionist') {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <?php include('shared-components/includes.php') ?>
-    <title>Receptionist Dashboard</title>
+    <title>Patient Dashboard</title>
 </head>
 <body>
 <?php
-include('shared-components/receptionist/sidebar.php');
+include('shared-components/patient/sidebar.php');
 ?>
 <div class="main-content">
 
     <header>
         <div class="navbar navbar-dark">
-            <a href="main.php" class="logo me-auto"><img src="assets/images/logo.png" alt="Clinic Logo" class="img-fluid"></a>
+            <a href="main.php" class="logo me-auto"><img src="assets/images/logo.png" alt="Clinic Logo"
+                                                         class="img-fluid"></a>
             <a><?php echo $_SESSION['user']['username'] ?></a>
         </div>
     </header>
@@ -36,17 +37,16 @@ include('shared-components/receptionist/sidebar.php');
         <br/>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="receptionist-dashboard.php">Home</a></li>
-                <li class="breadcrumb-item"><a href="receptionist-appointments.php">Appointments</a></li>
-                <li class="breadcrumb-item active" aria-current="page">All</li>
+                <li class="breadcrumb-item"><a href="patient-dashboard.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Appointments</li>
             </ol>
         </nav>
         <br/>
-        <a href="receptionist-scheduleAppointment.php"><button class="btn btn-primary" id="today">New Appointment</button></a>
+        <!--        <a href="receptionist-scheduleAppointment.php"><button class="btn btn-primary" id="today">New Appointment</button></a>-->
         <br/>
         <br/>
 
-        <table id="appointments_table" class="table table-primary" >
+        <table id="appointments_table" class="table table-primary">
             <thead>
             <tr>
                 <th>Client</th>
@@ -64,15 +64,15 @@ include('shared-components/receptionist/sidebar.php');
 
 <script type="text/javascript">
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         $('#appointments_table').DataTable({
             responsive: true,
-            "bDeferRender":true,
+            "bDeferRender": true,
             "sPaginationType": "full_numbers",
-            "ajax":{
-                url:"controller/view-appointments.php",
-                type:"POST"
+            "ajax": {
+                url: "controller/view-appointments.php?patient_id=<?php echo $_SESSION['user_id']; ?>",
+                type: "POST"
             },
             "columns": [
                 {"data": "full_name"},
@@ -87,12 +87,12 @@ include('shared-components/receptionist/sidebar.php');
                 "sProcessing": "Processing...",
             }
         })
-    } );
+    });
 </script>
 
 </body>
 
-<?php } else{
+<?php } else {
     //Access Forbidden
     header("Location: ./login.php?error=Access Forbidden");
 } ?>

@@ -41,12 +41,12 @@
             </a>
 
 
-            <a href="receptionist-dashboard.php">
-                <li>
-                    <span class="ti-credit-card"></span>
-                    <span>Payments</span>
-                </li>
-            </a>
+<!--            <a href="receptionist-dashboard.php">-->
+<!--                <li>-->
+<!--                    <span class="ti-credit-card"></span>-->
+<!--                    <span>Payments</span>-->
+<!--                </li>-->
+<!--            </a>-->
 
 
             <a href="receptionist-dashboard.php">

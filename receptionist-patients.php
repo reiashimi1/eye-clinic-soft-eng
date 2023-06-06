@@ -83,7 +83,7 @@ if (isset($_SESSION['user_id']) && ($_SESSION['role'] === 'receptionist' || $_SE
                                 <th>Phone</th>
                                 <th>Birthdate</th>
                                 <th>Address</th>
-                                <th>Edit</th>
+<!--                                <th>Edit</th>-->
                             </tr>
                             </thead>
                         </table>
@@ -228,8 +228,8 @@ if (isset($_SESSION['user_id']) && ($_SESSION['role'] === 'receptionist' || $_SE
                     {"data": "email"},
                     {"data": "phone"},
                     {"data": "birthday"},
-                    {"data": "address"},
-                    {"data": "edit"}
+                    {"data": "address"}
+                    // {"data": "edit"}
                 ],
                 "oLanguage": {
                     "sProcessing": "Processing...",

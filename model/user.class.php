@@ -78,7 +78,7 @@
         }
 
         public function getNrOnline() {
-            $stmt = $this->dbh->prepare("SELECT * FROM `user_account` where isOnline = 'online' and `role` not in ('patient')");
+            $stmt = $this->dbh->prepare("SELECT * FROM `user_account`");
             $stmt->execute();
             $stmt->fetchAll(PDO::FETCH_ASSOC);
             return $stmt->rowCount() - 1;

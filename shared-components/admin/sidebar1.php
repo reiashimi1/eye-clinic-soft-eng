@@ -33,20 +33,20 @@
                 </li>
             </a>
 
-            <a href="">
-                <li>
-                    <span class="ti-folder"></span>
-                    <span>Projects</span>
-                </li>
-            </a>
-
-
-            <a href="">
-                <li>
-                    <span class="ti-time"></span>
-                    <span>Timesheet</span>
-                </li>
-            </a>
+<!--            <a href="">-->
+<!--                <li>-->
+<!--                    <span class="ti-folder"></span>-->
+<!--                    <span>Projects</span>-->
+<!--                </li>-->
+<!--            </a>-->
+<!---->
+<!---->
+<!--            <a href="">-->
+<!--                <li>-->
+<!--                    <span class="ti-time"></span>-->
+<!--                    <span>Timesheet</span>-->
+<!--                </li>-->
+<!--            </a>-->
 
 
             <a href="">

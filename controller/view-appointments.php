@@ -5,7 +5,7 @@ include_once('../model/employee.class.php');
 
 session_start();
 
-if(isset($_SESSION['user_id']) && ($_SESSION['role'] === 'receptionist')) {
+if(isset($_SESSION['user_id']) && ($_SESSION['role'] === 'receptionist' || $_SESSION['role'] === 'patient')) {
     $dbh = Database::get_connection();
     $query = '';
     $output = array();
@@ -20,6 +20,10 @@ if(isset($_SESSION['user_id']) && ($_SESSION['role'] === 'receptionist')) {
         $query .= 'OR status LIKE "%'.$_POST["search"]["value"].'%"';
         $query .= 'OR service LIKE "%'.$_POST["search"]["value"].'%"';
     }
+
+    // Append patient_id as a query parameter to the URL
+    $patient_id = $_GET['patient_id'];
+    $query .= ' WHERE patient_id = ' . $patient_id;
 
     $app = new Appointment($dbh);
     $result = $app->getAllAppointments($query);

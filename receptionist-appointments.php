@@ -58,19 +58,19 @@ include('shared-components/receptionist/sidebar.php');
                 </div>
             </div>
 
-            <div class="card-single">
-                <div class="card-body">
-                    <span class="ti-wheelchair"></span>
-                    <div>
-                        <h5>Upcomming Appointments</h5>
-                        <h4>View</h4>
-                        <br/>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a href="receptionist-upcoming-appointments.php"> <i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>
-                </div>
-            </div>
+<!--            <div class="card-single">-->
+<!--                <div class="card-body">-->
+<!--                    <span class="ti-wheelchair"></span>-->
+<!--                    <div>-->
+<!--                        <h5>Upcomming Appointments</h5>-->
+<!--                        <h4>View</h4>-->
+<!--                        <br/>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card-footer">-->
+<!--                    <a href="receptionist-upcoming-appointments.php"> <i class="fa fa-arrow-alt-circle-right fa-2x"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
 
             <div class="card-single">
                 <div class="card-body">

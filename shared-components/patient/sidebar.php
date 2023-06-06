@@ -18,7 +18,7 @@
             </a>
 
 
-            <a href="patient-appointment.php">
+            <a href="patient-appointments.php">
                 <li>
                     <span class="ti-time"></span>
                     <span>Appointments</span>
@@ -33,7 +33,7 @@
                 </li>
             </a>
 
-            <a href="patient-healthRecords.php">
+            <a href="patient-health-records.php">
                 <li>
                     <span class="ti-support"></span>
                     <span>Health Records</span>
